@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>问卷调查：自动化代码审查与测试工具的需求调研</title>
+</head>
+<body>
+    <h1>问卷调查：自动化代码审查与测试工具的需求调研</h1>
+    <p>感谢您参与我们的调研！我们正在开发一款新的自动化代码审查和测试工具，旨在提高开发效率和代码质量。您的宝贵意见将帮助我们更好地了解开发者的需求。</p>
+    <form action="/submit" method="post">
+        <h2>基本信息</h2>
+        <label for="current_tools">您目前使用的代码审查和测试工具有哪些？（可多选）:</label><br>
+        <input type="checkbox" id="sonarqube" name="current_tools" value="SonarQube">
+        <label for="sonarqube">SonarQube</label><br>
+        <input type="checkbox" id="eslint" name="current_tools" value="ESLint">
+        <label for="eslint">ESLint</label><br>
+        <input type="checkbox" id="pylint" name="current_tools" value="Pylint">
+        <label for="pylint">Pylint</label><br>
+        <input type="checkbox" id="flake8" name="current_tools" value="Flake8">
+        <label for="flake8">Flake8</label><br>
+        <input type="checkbox" id="jshint" name="current_tools" value="JSHint">
+        <label for="jshint">JSHint</label><br>
+        <input type="checkbox" id="checkstyle" name="current_tools" value="Checkstyle">
+        <label for="checkstyle">Checkstyle</label><br>
+        <input type="checkbox" id="pmd" name="current_tools" value="PMD">
+        <label for="pmd">PMD</label><br>
+        <input type="checkbox" id="findbugs" name="current_tools" value="FindBugs">
+        <label for="findbugs">FindBugs</label><br>
+        <input type="text" id="other_tools" name="other_tools" placeholder="其他，请注明">
+        <br><br>
+        <label for="satisfaction">您对这些工具最满意的地方是什么？请简要描述（开放式回答）:</label><br>
+        <textarea id="satisfaction" name="satisfaction" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="dissatisfaction">您对这些工具最不满意的地方是什么？请简要描述（开放式回答）:</label><br>
+        <textarea id="dissatisfaction" name="dissatisfaction" rows="4" cols="50"></textarea>
+        <br><br>
+        <h2>功能需求</h2>
+        <label for="better_false_positive_control">更好的误报控制:</label>
+        <input type="checkbox" id="better_false_positive_control" name="features" value="更好的误报控制"><br>
+        <label for="more_language_support">更全面的语言支持:</label>
+        <input type="checkbox" id="more_language_support" name="features" value="更全面的语言支持"><br>
+        <label for="auto_fix_common_issues">自动修复常见问题:</label>
+        <input type="checkbox" id="auto_fix_common_issues" name="features" value="自动修复常见问题"><br>
+        <label for="integrate_more_ci_cd">集成更多CI/CD平台:</label>
+        <input type="checkbox" id="integrate_more_ci_cd" name="features" value="集成更多CI/CD平台"><br>
+        <label for="detailed_performance_report">提供详细的性能分析报告:</label>
+        <input type="checkbox" id="detailed_performance_report" name="features" value="提供详细的性能分析报告"><br>
+        <label for="custom_rules">支持自定义规则:</label>
+        <input type="checkbox" id="custom_rules" name="features" value="支持自定义规则"><br>
+        <label for="friendly_ui">更友好的用户界面:</label>
+        <input type="checkbox" id="friendly_ui" name="features" value="更友好的用户界面"><br>
+        <input type="text" id="other_features" name="other_features" placeholder="其他，请注明">
+        <br><br>
+        <h2>支付意向</h2>
+        <label for="willing_to_pay">您是否愿意为更高质量的代码审查和测试服务付费?</label><br>
+        <input type="radio" id="yes" name="willing_to_pay" value="是">
+        <label for="yes">是</label><br>
+        <input type="radio" id="no" name="willing_to_pay" value="否">
+        <label for="no">否</label><br>
+        <br>
+        <label for="price_range">如果您愿意付费，您能接受的价格范围是多少（每月/每年）?</label><br>
+        <select id="price_range" name="price_range">
+            <option value="0-50元">0-50元</option>
+            <option value="51-100元">51-100元</option>
+            <option value="101-200元">101-200元</option>
+            <option value="201-500元">201-500元</option>
+            <option value="500元以上">500元以上</option>
+        </select>
+        <br><br>
+        <h2>其他信息</h2>
+        <label for="role">您的职业角色是什么?</label><br>
+        <input type="radio" id="software_engineer" name="role" value="软件工程师">
+        <label for="software_engineer">软件工程师</label><br>
+        <input type="radio" id="test_engineer" name="role" value="测试工程师">
+        <label for="test_engineer">测试工程师</label><br>
+        <input type="radio" id="technical_manager" name="role" value="技术经理">
+        <label for="technical_manager">技术经理</label><br>
+        <input type="radio" id="product_manager" name="role" value="产品经理">
+        <label for="product_manager">产品经理</label><br>
+        <input type="text" id="other_role" name="other_role" placeholder="其他，请注明">
+        <br><br>
+        <label for="company_size">您所在公司的规模是？</label><br>
+        <input type="radio" id="less_than_10" name="company_size" value="小于10人">
+        <label for="less_than_10">小于10人</label><br>
+        <input type="radio" id="10_to_50" name="company_size" value="10-50人">
+        <label for="10_to_50">10-50人</label><br>
+        <input type="radio" id="51_to_200" name="company_size" value="51-200人">
+        <label for="51_to_200">51-200人</label><br>
+        <input type="radio" id="201_to_500" name="company_size" value="201-500人">
+        <label for="201_to_500">201-500人</label><br>
+        <input type="radio" id="more_than_500" name="company_size" value="500人以上">
+        <label for="more_than_500">500人以上</label><br>
+        <br><br>
+        <label for="additional_feedback">您是否有其他建议或需求？请在此处留言:</label><br>
+        <textarea id="additional_feedback" name="additional_feedback" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="提交">
+    </form>
+    <p>非常感谢您的参与和支持！我们会认真考虑每一条反馈，并努力打造出更加符合大家需求的产品。</p>
+</body>
+</html>

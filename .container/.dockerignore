@@ -1,0 +1,74 @@
+# Git
+.git
+.gitignore
+.github
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+DOCKER_README.md
+run_in_docker.sh
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 临时文件
+temp_*
+*.tmp
+*.log
+*.bak
+
+# 缓存
+.cache/
+.npm/
+.yarn/
+
+# 大型数据文件
+*.csv
+*.sqlite
+*.db
+*.hdf5
+*.h5
+*.parquet
+*.feather
+*.pkl
+*.pickle
+
+# 数据目录
+data/ 
